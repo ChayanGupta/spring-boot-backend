@@ -24,7 +24,7 @@ import com.backend.planmytrip.service.UserService;
 @RequestMapping("/user")
 public class UserController {
 
-	@Autowired UserService service;
+	@Autowired private UserService service;
 	
 	@PostMapping("/login")
 	public ResponseEntity<Map<String, Object>> login(@Valid @RequestBody UserDto userDto, BindingResult result){

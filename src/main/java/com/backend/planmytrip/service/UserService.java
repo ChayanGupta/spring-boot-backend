@@ -12,7 +12,7 @@ import com.backend.planmytrip.repository.UserRepo;
 public class UserService {
 	
 	@Autowired private UserRepo repo;
-	@Autowired UserDtoHelper dtoHelper;
+	@Autowired private UserDtoHelper dtoHelper;
 	
 	public UserDto login(UserDto userDto) {
 		User isUserExist  = repo.findByEmailAndPassword(userDto.getEmail(), userDto.getPassword());
