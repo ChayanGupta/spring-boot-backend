@@ -20,5 +20,6 @@ public class Activity {
 	private Integer id;
 	
 	private String activityName;
-	private Double activityPrice;
+	private Double activityPrice;	
+	
 }

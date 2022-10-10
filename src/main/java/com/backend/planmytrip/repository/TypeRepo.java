@@ -7,5 +7,5 @@ import com.backend.planmytrip.entity.Type;
 
 @Repository
 public interface TypeRepo extends JpaRepository<Type, Integer>{
-
+	Type findByName(String name);
 }

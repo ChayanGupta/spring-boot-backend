@@ -34,4 +34,7 @@ public class Package {
 	
 	@Transient
 	private List<Activity> activities;
+	
+	@Transient 
+	private Flight flight;
 }

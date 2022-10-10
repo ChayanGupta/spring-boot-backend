@@ -7,5 +7,5 @@ import com.backend.planmytrip.entity.AreaOfInterest;
 
 @Repository
 public interface AreaOfInterestRepo extends JpaRepository<AreaOfInterest, Integer>{
-
+	AreaOfInterest findByName(String name);
 }

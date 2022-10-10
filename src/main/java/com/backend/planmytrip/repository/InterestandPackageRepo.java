@@ -10,4 +10,6 @@ import com.backend.planmytrip.entity.InterestandPackage;
 @Repository
 public interface InterestandPackageRepo extends JpaRepository<InterestandPackage, Integer>{
 	List<InterestandPackage> findByCityId(Integer cityId);
+	List<InterestandPackage> findByAreaOfInterestId(Integer areaOfInterestId);
+	Integer deleteAllByCityId(Integer id);
 }

@@ -7,5 +7,5 @@ import com.backend.planmytrip.entity.Activity;
 
 @Repository
 public interface ActivityRepo extends JpaRepository<Activity, Integer>{
-
+	Activity findByActivityName(String activityName);
 }

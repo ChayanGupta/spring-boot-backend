@@ -10,4 +10,6 @@ import com.backend.planmytrip.entity.TypeandPackage;
 @Repository
 public interface TypeandPackageRepo extends JpaRepository<TypeandPackage, Integer>{
 	List<TypeandPackage> findByPackageId(Integer packageId);
+	List<TypeandPackage> findByTypeId(Integer typeId);
+	Integer deleteAllByPackageId(Integer id);
 }
